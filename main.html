@@ -3,42 +3,44 @@
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	 <link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet"> 
 	<title>Bubble Pop</title>
 </head>
 <body>
 
 	<section id="score">
 		<h1>Your score: <span id="scoretracker">0</span></h1>
+		<p id="popupmessage"></p>
 
 	</section>
 
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class ="col-sm-4">
+				<!-- <div class ="col-sm-0"> -->
+				<!-- </div> -->
+				<div class ="col-xs-6 unpopped sphere gradient1" id="unpopbubble1">
 				</div>
-				<div class ="col-sm-2 unpopped" id="unpopbubble1">
+				<div class = "col-xs-6 unpopped sphere gradient1" id="unpopbubble2">
 				</div>
-				<div class = "col-sm-2 unpopped" id="unpopbubble2">
-				</div>
-				<div class ="col-sm-4">
-				</div>
+				<!-- <div class ="col-sm-0"> -->
+				<!-- </div> -->
 			</div>
 
 			<div class="row">
-				<div class ="col-sm-4">
+				<!-- <div class ="col-sm-4">
+				</div> -->
+				<div class = "col-xs-6 unpopped sphere gradient1" id = "unpopbubble3">
 				</div>
-				<div class = "col-sm-2 unpopped" id = "unpopbubble3">
+				<div class = "col-xs-6 unpopped sphere gradient1" id = "unpopbubble4">
 				</div>
-				<div class = "col-sm-2 unpopped" id = "unpopbubble4">
-				</div>
-				<div class ="col-sm-4">
-				</div>
+				<!-- <div class ="col-sm-4">
+				</div> -->
 			</div>
 		</div>
 	</section>
 
-	<section>
+<!-- 	<section>
 		<div>
 			<img id = "popped1" src="http://i65.tinypic.com/vy0d2f.png">
 		</div>
@@ -51,7 +53,8 @@
 		<div>
 			<img id = "popped4" src="http://i65.tinypic.com/vy0d2f.png">
 		</div>
-	</section>
+	</section> -->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 	<script src="main.js"></script>

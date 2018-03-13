@@ -1,14 +1,18 @@
 body {
   position: relative;
+  text-align: center;
+  
 }
 
 #score {
   margin-top: 50px;
   text-align: center;
+  font-family: 'Baumans', cursive;
 }
 
-h1 {
-  font-size: 20px;
+p {
+  font-size: 25px;
+  color: purple;
 }
 
 .row {
@@ -27,6 +31,7 @@ h1 {
   background-size: contain;
   text-align: center;
   background-repeat: no-repeat;
+  display: flex;
 }
 /*
 .popped {
@@ -47,7 +52,7 @@ h1 {
 
 
 
-#unpopbubble1 {
+/*#unpopbubble1 {
   background-image: url("http://i65.tinypic.com/2s7fjnc.png");
   z-index: 4;
 }
@@ -67,9 +72,9 @@ h1 {
   background-image: url("http://i65.tinypic.com/2s7fjnc.png");
   margin-left: -25px;
   z-index: 4;
-}
+}*/
 
-#popped1 {
+/*#popped1 {
   display: inline-block;
   height: 150px;
   width: 159px;
@@ -107,23 +112,63 @@ h1 {
   top: 181px;
   right: 505px;
   z-index: 3;
-  }
+  }*/
 
-button {
-  display: absolute;
-  width: 100px;
-}
-
-div{
+container {
   text-align: center;
 }
 
-div + button {
-  padding-top: 10px;
-}
 
-
-/*.container {
+/*
+.container {
   position: relative;
 
+}*/
+
+.grey {
+  background-color: grey;
+    border: 1px solid black;
 }
+
+.sphere {
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 500%;
+  position: relative;
+  box-shadow: inset -10px -10px 100px #000, 10px 10px 20px grey, inset 0px 0px 10px grey;
+  display: inline-block;
+  margin: 5%;
+
+}
+.sphere::after {
+  background-color: rgba(255, 255, 255, 0.3);
+  content: '';
+  height: 45%;
+  width: 12%;
+  position: absolute;
+  top: 4%;
+  left: 15%;
+  border-radius: 50%;
+  transform: rotate(40deg);
+}
+
+/* Background Gradient for Triadic Colors */
+.gradient1
+{
+    background-color: #D7D9A4;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #D7D9A4 -webkit-gradient(linear, left top, left bottom, from(#FFE7FE), to(#D7D9A4)) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #D7D9A4 -moz-linear-gradient(top, #FFE7FE, #D7D9A4) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE7FE, endColorstr=#D7D9A4) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE7FE, endColorstr=#FFE7FE)" no-repeat;
+}
+
+
+
