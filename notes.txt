@@ -1,0 +1,48 @@
+
+
+// // Project 1: Bubble Pop - Pop Along with Me
+
+// // 1) Pre-game - Display board with bubbles using CSS elements   
+// // - Done
+
+// // 2) Pre-game - show counter  
+
+// var score = 0;
+
+// // 3a) Pre-game - Game instructions show - using setTime interval
+// // to transit eg 5 sec to show instructions  
+// generate pattern e.g. 4,3,2,1
+//pick the selector and change them according to 2, 4, 6, 8 secs interval.
+
+/*
+3b) Select display for instructions
+to turn it on and off using DOM manipulation  
+
+3c) Message: "Remember the sequence of bubbles popped when game starts ad start tapping the screen to pop
+them when it is your turn."
+
+4) Display 4 bubbles in bubble wrap unpopped while the rest are popped. 
+Shows the sequence of bubbles popped. Bubbles popped based on randomisation.
+
+5) Your turn 
+
+6) Bubbles popped when user presses on the bubble.
+
+7) Check for sequence, whether the bubbles tapped are the same as shown in step 4.
+
+8) If bubble is not correct, show bubble bursts and show the message "Wrong bubble popped! Game restarting
+
+9) Show screen at step 4.
+
+10) If player wins, show "Not bad! Let's test your skills further."
+
+11) Shows sequence of bubbles popped. Bubbles popped based on randomisation. Repeat 5->10 steps. 8 bubbles unpopped.
+
+12) Infinity bubbles -> After playing all the levels, unlock the infinity bubble stage.
+
+13) "You are offically one of our best bubble poppers! As a reward, you can pop all day in any order or disorder you want
+in our bonus game - Infinity Bubbles!"
+
+14) Bubbles go forever on the screen when you tap on 'move the bubble wrap'. Player can just play the bubble wrap game.
+
+

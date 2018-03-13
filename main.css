@@ -1,0 +1,129 @@
+body {
+  position: relative;
+}
+
+#score {
+  margin-top: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.row {
+  border:0;
+}
+
+/*.col-sm-2, col-sm-4 {
+  border: 1px solid black;
+  width: 
+}*/
+
+.unpopped {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  background-size: contain;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+/*
+.popped {
+  display: inline;
+  margin-top: -100px;
+  margin-right: -150px;
+*/
+/*}*/
+
+/*#poppedbubble1 {
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  height: 300px;
+  width: 300px;
+}
+*/
+
+
+
+#unpopbubble1 {
+  background-image: url("http://i65.tinypic.com/2s7fjnc.png");
+  z-index: 4;
+}
+
+#unpopbubble2 {
+  background-image: url("http://i65.tinypic.com/2s7fjnc.png");
+  margin-left: -25px;
+  z-index: 4;
+}
+
+#unpopbubble3 {
+  background-image: url("http://i65.tinypic.com/2s7fjnc.png");
+  z-index: 4;
+}
+
+#unpopbubble4 {
+  background-image: url("http://i65.tinypic.com/2s7fjnc.png");
+  margin-left: -25px;
+  z-index: 4;
+}
+
+#popped1 {
+  display: inline-block;
+  height: 150px;
+  width: 159px;
+  position: absolute;
+  top: 32px;
+  left: 450px;
+  z-index: 3;
+  }
+
+#popped2 {
+  display: inline-block;
+  height: 150px;
+  width: 159px;
+  position: absolute;
+  top: 32px;
+  right: 505px;
+  z-index: 3;
+  }
+
+  #popped3 {
+  display: inline-block;
+  height: 150px;
+  width: 159px;
+  position: absolute;
+  top: 181px;
+  left: 450px;
+  z-index: 3;
+  }
+
+  #popped4 {
+  display: inline-block;
+  height: 150px;
+  width: 159px;
+  position: absolute;
+  top: 181px;
+  right: 505px;
+  z-index: 3;
+  }
+
+button {
+  display: absolute;
+  width: 100px;
+}
+
+div{
+  text-align: center;
+}
+
+div + button {
+  padding-top: 10px;
+}
+
+
+/*.container {
+  position: relative;
+
+}
