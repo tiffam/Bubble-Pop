@@ -1,3 +1,5 @@
+//set up for score tracking.
+
 var counter = 0;
 
 var score = 0;
@@ -5,28 +7,25 @@ var score = 0;
 //set functions to show popped bubbles.
 
 var pop1 = function () {
-	$('#unpopbubble1').removeClass("gradient1").addClass("grey");
+	$('#unpopped1').removeClass("gradient1").addClass("white");
 }
 
 var pop2 = function () {
-	$('#unpopbubble2').removeClass("gradient1").addClass("grey");
+	$('#unpopped2').removeClass("gradient1").addClass("white");
 }
 
 var pop3 = function () {
-	$('#unpopbubble3').removeClass("gradient1").addClass("grey");
+	$('#unpopped3').removeClass("gradient1").addClass("white");
 }
 
 var pop4 = function () {
-	$('#unpopbubble4').removeClass("gradient1").addClass("grey");
+	$('#unpopped4').removeClass("gradient1").addClass("white");
 }
 
-//function to reset images and counter and pattern
+//Reset images and pattern
 
 var resetImage = function () {
-	$('#unpopbubble1').removeClass("grey").addClass("gradient1");;
-	$('#unpopbubble2').removeClass("grey").addClass("gradient1");;
-	$('#unpopbubble3').removeClass("grey").addClass("gradient1");;
-	$('#unpopbubble4').removeClass("grey").addClass("gradient1");;
+	$('.unpopped').removeClass("white").addClass("gradient1");;
 }
 
 var resetGame = function(){
@@ -40,7 +39,11 @@ var resetGame = function(){
 //Generate pattern
 var pattern = _.shuffle([pop1, pop2, pop3, pop4]);
 
-//Create pattern with sequence.
+//calliing function to start the game
+
+patternImageGenerator();
+
+//Display the image based on random sequence created.
 
 function patternImageGenerator(){
 	setTimeout(pattern[0], 1000);
@@ -50,7 +53,8 @@ function patternImageGenerator(){
 	setTimeout(resetImage, 5000);
 }
 
-patternImageGenerator();
+
+//Retagging of pattern array as functions cannot be checked for equality.
 
 function retagPattern() {
 	for (i=0; i<pattern.length; i++)
@@ -71,47 +75,43 @@ function retagPattern() {
 	}
 }
 
-//create array to save user's inputs
 
-//show user's input as clicked
+//Set up counter count; call functions related to tagging; and checking for wins.
 
-
-
-$("#unpopbubble1").click(function (){
-	$('#unpopbubble1').removeClass("gradient1").addClass("grey");;
+function activitiesToRun () {
 	counter++;
-	console.log(counter);
+	retagPattern();
+	checkWin();
+}
+
+//Listen to user's input
+
+$("#unpopped1").click(function (){
+	$('#unpopped1').removeClass("gradient1").addClass("white");
+	$("body").addClass("gradient1");
 	one();
-	retagPattern();
-	checkWin();
-
-
+	activitiesToRun();
 });
-$("#unpopbubble2").click(function (){
-	$('#unpopbubble2').removeClass("gradient1").addClass("grey");;
-	counter++;
-	console.log(counter);
+
+$("#unpopped2").click(function (){
+	$('#unpopped2').removeClass("gradient1").addClass("white");
+	$("body").addClass("gradient1");
 	two();
-	retagPattern();
-	checkWin();
-
+	activitiesToRun();
 });
-$("#unpopbubble3").click(function (){
-	$('#unpopbubble3').removeClass("gradient1").addClass("grey");;
-	counter++;
-	console.log(counter);
+
+$("#unpopped3").click(function (){
+	$('#unpopped3').removeClass("gradient1").addClass("white");
+	$("body").addClass("gradient1");
 	three();
-	retagPattern();
-	checkWin();
-
+	activitiesToRun();
 });
-$("#unpopbubble4").click(function (){
-	$('#unpopbubble4').removeClass("gradient1").addClass("grey");;
-	counter++;
-	console.log(counter);
+
+$("#unpopped4").click(function (){
+	$('#unpopped4').removeClass("gradient1").addClass("white");
+	$("body").addClass("gradient1");
 	four();
-	retagPattern();
-	checkWin();
+	activitiesToRun();
 
 });
 
@@ -135,40 +135,36 @@ var four = function(){
 	userPattern.push("four");
 };
 
-//check wins
+//check wins and prints message pop-up depending on correct patterns.
 
 var checkWin = function(){
 	if(counter===1){
 		if(pattern[0]===userPattern[0]){
-			$("#popupmessage").text("Not bad...");
 			score +=10;
+			$("#popupmessage").text("Not bad...");
 			$("#scoretracker").text(score);
-			console.log("score", score);
 		}
 		else {
-			$("#popupmessage").text("Can't believe this....");
+			$("#popupmessage").text("....You can't even get one right...");
 			resetGame();
 		}
 	}
 	if(counter===2){
 		if(pattern[1]===userPattern[1]){
+			score+=10;
 			$("#popupmessage").text("Keep it up");
-			score +=10;
 			$("#scoretracker").text(score);
-			console.log("score", score);
 		}
 		else {
 			$("#popupmessage").text("...Train up before you try again!");
 			resetGame();
 		}
 	}
-
 	if (counter===3){
 		if(pattern[2]===userPattern[2]){
+			score+=10;
 			$("#popupmessage").text("Awesome! One more to go!");
-			score +=10;
 			$("#scoretracker").text(score);
-			console.log("score", score);
 		}
 		else {
 			$("#popupmessage").text("Do better next time");
@@ -177,16 +173,15 @@ var checkWin = function(){
 	}
 	if (counter===4){
 		if(pattern[3]===userPattern[3]){
-			$("#popupmessage").text("Terrific! You've got great memory! How about another round?");
-			score +=20;
+			score+=20;
+			$("#popupmessage").text("Terrific! You've got great memory! Let's do this again.");
 			$("#scoretracker").text(score);
-			console.log("score", score);
 			resetGame();
-
 		}
 		else {
-			$("#popupmessage").text("You almost got it. Try again and you may just get it right!");
+			$("#popupmessage").text("You almost got it. You may just get it right on the next attempt!");
 			resetGame();
 		}
 	}
 }		
+

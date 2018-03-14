@@ -1,28 +1,18 @@
 body {
   position: relative;
   text-align: center;
-  
 }
 
 #score {
-  margin-top: 50px;
+  padding: 30px 0;
   text-align: center;
   font-family: 'Baumans', cursive;
 }
 
 p {
   font-size: 25px;
-  color: purple;
+  background-color: #E7FFF4;
 }
-
-.row {
-  border:0;
-}
-
-/*.col-sm-2, col-sm-4 {
-  border: 1px solid black;
-  width: 
-}*/
 
 .unpopped {
   display: inline-block;
@@ -33,113 +23,25 @@ p {
   background-repeat: no-repeat;
   display: flex;
 }
-/*
-.popped {
-  display: inline;
-  margin-top: -100px;
-  margin-right: -150px;
-*/
-/*}*/
-
-/*#poppedbubble1 {
-  position: absolute;
-  top: 300px;
-  left: 150px;
-  height: 300px;
-  width: 300px;
-}
-*/
-
-
-
-/*#unpopbubble1 {
-  background-image: url("http://i65.tinypic.com/2s7fjnc.png");
-  z-index: 4;
-}
-
-#unpopbubble2 {
-  background-image: url("http://i65.tinypic.com/2s7fjnc.png");
-  margin-left: -25px;
-  z-index: 4;
-}
-
-#unpopbubble3 {
-  background-image: url("http://i65.tinypic.com/2s7fjnc.png");
-  z-index: 4;
-}
-
-#unpopbubble4 {
-  background-image: url("http://i65.tinypic.com/2s7fjnc.png");
-  margin-left: -25px;
-  z-index: 4;
-}*/
-
-/*#popped1 {
-  display: inline-block;
-  height: 150px;
-  width: 159px;
-  position: absolute;
-  top: 32px;
-  left: 450px;
-  z-index: 3;
-  }
-
-#popped2 {
-  display: inline-block;
-  height: 150px;
-  width: 159px;
-  position: absolute;
-  top: 32px;
-  right: 505px;
-  z-index: 3;
-  }
-
-  #popped3 {
-  display: inline-block;
-  height: 150px;
-  width: 159px;
-  position: absolute;
-  top: 181px;
-  left: 450px;
-  z-index: 3;
-  }
-
-  #popped4 {
-  display: inline-block;
-  height: 150px;
-  width: 159px;
-  position: absolute;
-  top: 181px;
-  right: 505px;
-  z-index: 3;
-  }*/
 
 container {
   text-align: center;
 }
 
-
-/*
-.container {
-  position: relative;
-
-}*/
-
-.grey {
-  background-color: grey;
-    border: 1px solid black;
+.white {
+  background-color: white;
 }
 
 .sphere {
-  border: 1px solid black;
-  height: 200px;
-  width: 200px;
+  border: 1px solid #DCDCDC;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
   font-size: 500%;
   position: relative;
-  box-shadow: inset -10px -10px 100px #000, 10px 10px 20px grey, inset 0px 0px 10px grey;
+  box-shadow: inset -10px -10px 100px #DCDCDC, 10px 10px 20px grey, inset 0px 0px 10px grey;
   display: inline-block;
   margin: 5%;
 
@@ -156,6 +58,12 @@ container {
   transform: rotate(40deg);
 }
 
+
+.unpopped:active {
+ transform: translateY(2%);
+}
+
+
 /* Background Gradient for Triadic Colors */
 .gradient1
 {
@@ -170,5 +78,21 @@ container {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE7FE, endColorstr=#FFE7FE)" no-repeat;
 }
 
+/* Background Gradient for Triadic Colors */
+.gradient2
+{
+    background-color: #B3D9A4;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #B3D9A4 -webkit-gradient(linear, left top, left bottom, from(#FFE7EE), to(#B3D9A4)) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #B3D9A4 -moz-linear-gradient(top, #FFE7EE, #B3D9A4) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE7EE, endColorstr=#B3D9A4) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE7EE, endColorstr=#FFE7EE)" no-repeat;
+}
 
+/*.newboard {
+  display: none;
+}*/
 
