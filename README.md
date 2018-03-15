@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## Bubble Pop
+A fun and easy to play memory game for all ages! 
+Follow the pattern shown on screen and see if you can rise up from Bubble Popper-In-Training and get a spot in our League of Poppers.
 
-You can use the [editor on GitHub](https://github.com/tiffam/Bubble-Pop/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Getting Started
+Play the game by clicking [here](http://htmlpreview.github.io/?https://github.com/tiffam/Bubble-Pop/blob/master/main.html).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Approach taken
 
-### Markdown
+The game is playable from the onset. It is designed to be intuitive for users to play. The game interface is kept simple and responsive, and it can be broken down into 3 main sections - score, message and bubbles. A random pattern of 4 bubbles will be generated and it will display on screen in sequence. Users will win the game by tapping on the bubbles in the correct sequence. They get to level up the game based on their scores based on the following:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Score of 0 - Popper-In-Training
+Score of 150 - Confirmed Popper
+Score of 1000 - Popper Expert status
+Score of 1500 - Member of the League of Poppers
 
-```markdown
-Syntax highlighted code block
+The game can be played to infinity as long as user's scores do not dip below 0. Once it reaches negative value, the gameboard will vanish and that ends the game. Users can refresh the browser to play the game again.
 
-# Header 1
-## Header 2
-### Header 3
+## Built With
+Bootstrap
+JQuery, HTML, CSS, Javascript and UnderscoreJS
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tiffam/Bubble-Pop/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
