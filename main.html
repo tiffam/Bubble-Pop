@@ -3,44 +3,77 @@
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="main.css">
-	 <link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<title>Bubble Pop</title>
 </head>
-<body>
-
+<body class="gradient1">
 	<section id="score">
-		<h1>Your score: <span id="scoretracker">0</span></h1>
-		<p id="popupmessage"></p>
+		<h1 id="level">Level: Popper-In-Training</h1>
+		<h1>Score: <span id="scoretracker">0</span></h1>
+		<p class="hidden" id="popupmessage">Follow the pattern and tap along at the end of it.</p>
 
 	</section>
 
+		<section class="effects">
+		<div class="container2">
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+		</div>
+	</section>
+
+
 	<section>
 		<div class="container">
+			<div class="overlay nocover"></div>	
 			<div class="row justify-content-center">
 
-				<div class ="col-xs unpopped sphere gradient1" id="unpopped0">
-				</div>
 				<div class ="col-xs unpopped sphere gradient1" id="unpopped1">
 				</div>
-				<div class = "col-xs unpopped sphere gradient1" id="unpopped2">
+				<div class ="col-xs unpopped sphere gradient1" id="unpopped2">
 				</div>
-				<div class ="col-xs unpopped sphere gradient1" id="unpopped2b">
+				<div class = "col-xs unpopped sphere gradient1" id="unpopped3">
+				</div>
+				<div class ="col-xs unpopped sphere gradient1" id="unpopped4">
 				</div>
 
 			</div>
 
 			<div class="row justify-content-center">
-		
-				<div class = "col-xs unpopped sphere gradient1" id = "unpopped3a">
+
+				<div class = "col-xs unpopped sphere gradient1" id = "unpopped5">
 				</div>
-				<div class = "col-xs unpopped sphere gradient1" id = "unpopped3">
+				<div class = "col-xs unpopped sphere gradient1" id = "unpopped6">
 				</div>
-				<div class = "col-xs unpopped sphere gradient1" id = "unpopped4">
+				<div class = "col-xs unpopped sphere gradient1" id = "unpopped7">
 				</div>
-				<div class = "col-xs unpopped sphere gradient1" id = "unpopped4b">
+				<div class = "col-xs unpopped sphere gradient1" id = "unpopped8">
 				</div>
-		
+
 			</div>
+		</div>
+	</section>
+
+	<section class="effects">
+		<div class="container2">
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
+			<div class="coneffects"></div>
 		</div>
 	</section>
 
