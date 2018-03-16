@@ -12,10 +12,10 @@ The game is designed to be intuitive for players to play. Players can play it fr
 
 A random pattern of 4 bubbles will be generated and displayed on screen. Players will win the game set by tapping on the bubbles in the correct sequence. As the game progresses, players will level up based on their scores: 
 
-Score of 0 - Popper-In-Training
-Score of 150 - Confirmed Popper
-Score of 1000 - Popper Expert status
-Score of 1500 - Member of the League of Poppers
+* Score of 0 - Popper-In-Training
+* Score of 150 - Confirmed Popper
+* Score of 1000 - Popper Expert status
+* Score of 1500 - Member of the League of Poppers
 
 The game can be played to infinity as long as player's scores do not dip below 0. Once it reaches negative value, the gameboard will vanish and that ends the game. Players can refresh the browser to play the game again.
 
