@@ -93,7 +93,8 @@ function checkWin() {
 	for (let i = 0; i < userPattern.length; i++) {
 		if (pattern[i]!==userPattern[i]) {
 			$("#popupmessage").text("In the middle of every difficulty lies opportunity");
-			score -=20
+			score -=20;
+			levelling(); // check if score is below 0 -> Player will no longer be able to continue with game.
 			resetGame();
 		}
 		if (counter === i+1 && pattern[i] === userPattern[i]) {
@@ -126,35 +127,34 @@ function cheers() {
 //Game ends when player reaches negative score.
 
 function levelling () {
-	// if (score === 20){
-		if (score <= 0) {
-			$("#level").text("There is no failure except in no longer trying. Refresh to replay");
-			$(".pop").addClass("theend");
-		};
+	if (score <= 0) {
+		$("#level").text("There is no failure except in no longer trying. Refresh to replay");
+		$(".pop").addClass("theend");
+	};
 
-		if (score === 150) {
-			$("#level").text("Level up to confirmed Popper!");
-			$(".coneffects").addClass("confetti");
-		};
-		if (score === 200) {
-			$(".coneffects").removeClass("confetti");
-		};
-		if (score === 300) {
-			$("#level").text("Perserve to reach Popper Expert status!");
-		};
-		if (score === 1000) {
-			$("#level").text("Level up to Popper Expert! You are among our top poppers. Stay on track to get into our game league");
-			$(".coneffects").addClass("confetti");
-		};
-		if (score === 1100) {
-			$(".coneffects").removeClass("confetti");
-		};
-		if (score === 1500) {
-			$("#level").text("You are a member of our League of Poppers!");
-			$("body").removeClass("gradient1"); //background changes to white. Game continues.
-			$(".coneffects").addClass("confetti");
-		};
-	}
+	if (score === 150) {
+		$("#level").text("Level up to confirmed Popper!");
+		$(".coneffects").addClass("confetti");
+	};
+	if (score === 200) {
+		$(".coneffects").removeClass("confetti");
+	};
+	if (score === 300) {
+		$("#level").text("Perserve to reach Popper Expert status!");
+	};
+	if (score === 1000) {
+		$("#level").text("Level up to Popper Expert! You are among our top poppers. Stay on track to get into our game league");
+		$(".coneffects").addClass("confetti");
+	};
+	if (score === 1100) {
+		$(".coneffects").removeClass("confetti");
+	};
+	if (score === 1500) {
+		$("#level").text("You are a member of our League of Poppers!");
+		$("body").removeClass("gradient1"); //background changes to white. Game continues.
+		$(".coneffects").addClass("confetti");
+	};
+}
 
 //resets game while keeping score intact. 
 
